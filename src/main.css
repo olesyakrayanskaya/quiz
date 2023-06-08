@@ -45,19 +45,79 @@ body {
 .quiz-window__title {
     font-size: 2rem;
     font-weight: 500;
-    margin-bottom: 1rem;
     line-height: 2.25rem;
 }
 
 .quiz-window__description {
     font-size: 1rem;
     line-height: 1.25rem;
+    animation: text-animation 10s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+    0% {
+        scale: 1;
+        transform: translateX(0rem);
+        color: #383838;        
+    }
+
+    25% {
+        scale: 1.1;
+        transform: translateX(0.5rem);
+        color: #60606b;
+    }
+
+    50% {
+        scale: 1.2;
+        transform: translateX(1rem);
+        color: #686883;
+    }
+
+    75% {
+        scale: 1.1;
+        transform: translateX(0.5rem);
+        color: #60606b;
+    }
+
+    100% {
+        scale: 1;
+        transform: translateX(0rem);
+        color: #383838;
+    }    
 }
 
 .quiz-window__icon {
     width: 14rem;
     height: 14rem;
     align-self: flex-start;
+    animation: size-change 10s ease-in-out infinite;
+}
+
+@keyframes size-change {
+    0% {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    25% {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    50% {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    75% {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    100% {
+        width: 14rem;
+        height: 14rem;
+    }    
 }
 
 .steps {
@@ -77,7 +137,7 @@ body {
 }
 
 .step_animated {
-    animation: opas 1s ease-in-out;
+    animation: opas 0.7s linear;
 }
 
 @keyframes opas {

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "url": "git+https://github.com/olesyakrayanskaya/quiz.git"
+  },
   "scripts": {
     "start": "webpack server --open --mode development",
     "dev": "webpack --mode development",

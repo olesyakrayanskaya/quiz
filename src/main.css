@@ -344,6 +344,7 @@ body {
 
 .step__footer_send {
     flex-direction: column;
+    align-items: center;
 }
 
 .step_1 .step__footer {
@@ -465,12 +466,24 @@ a {
     .steps {
         margin-top: 4rem;
     }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .step {
+        height: 35rem;
+    }
+
+    .finish {
+        width: 100%;
+    }
 }
 
 @media (max-width: 40rem) {
     .step {
         width: 34rem;
-        height: 23rem;
     }
 
     .step__inner_first {
@@ -480,17 +493,46 @@ a {
     .step__item {
         width: 14rem;
     }
+
+    .step__item_lg {
+        width: 20rem;
+    }
+
+    .step__select,
+    .step__chekboxes {
+        width: 100%;
+    }
+
+    .step__chekboxes {
+        margin-bottom: 1rem;
+    }
+
+    .step__footer {
+        width: 32rem;
+        justify-content: flex-end;
+    }
+
+    .step__footer_send {
+        width: 75%;
+        margin-top: 1rem;
+    }
+
+    .contact-send {
+        width: 95%;
+    }
+
+    .step__btn_left {
+        margin-right: 1rem;
+    }
 }
 
 @media (max-width: 36rem) {
-
     .quiz-window {
         width: 100vw;
     }
 
     .step {
         width: 25rem;
-        height: 23rem;
         margin-bottom: 1rem;
     }
 
@@ -501,10 +543,13 @@ a {
     .step__item {
         width: 10rem;
     }
+
+    .step__item_lg {
+        width: 20rem;
+    }
 }
 
 @media (max-width: 27rem) {
-
     .quiz-window__title {
         font-size: 1.5rem;
     }
@@ -519,7 +564,6 @@ a {
 
     .step {
         width: 20rem;
-        height: 100%;
     }
 
     .step__main {
@@ -535,5 +579,9 @@ a {
 
     .step__item {
         width: 16rem;
+    }
+
+    .step__item_lg {
+        width: 17rem;
     }
 }

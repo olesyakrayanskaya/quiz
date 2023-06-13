@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+<script defer src="index.c893fbb5248f85c0cb2e.js"></script><link href="main.273321d9ee8335e54f1f.css" rel="stylesheet"></head>
+
+<body>
+    <div class="quiz-window">
+        <div class="quiz-window__inner">
+            <div class="quiz-window__info">
+                <h1 class="quiz-window__title">Подберём вуз мечты</h1>
+                <p class="quiz-window__description">Ответьте на 8 простых вопросов, и мы составим список наболее
+                    подходящих для вас вузов</p>
+                <img class="quiz-window__icon" src="icon_education.aac3b422d00c13cb5f42.svg" alt="icon">
+            </div>
+            <div class="steps">
+                <div class="step step_1">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">Для кого вы ищете учебное заведение?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main step__main_sm-radio">
+                            <fieldset class="step__inner_first">
+                                <div class="step__item">
+                                    <label class="step__label" for="yourself">Себе</label>
+                                    <input class="step__input" type="radio" name="forWhom" id="yourself">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="relative">Родственнику</label>
+                                    <input class="step__input" type="radio" name="forWhom" id="relative">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="child">Ребенку</label>
+                                    <input class="step__input" type="radio" name="forWhom" id="child">
+                                </div>
+                            </fieldset>
+                            <fieldset class="step__inner_second">
+                                <div class="step__item">
+                                    <label class="step__label" for="husband">Супругу/супруге</label>
+                                    <input class="step__input" type="radio" name="forWhom" id="husband">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="colleague">Коллеге</label>
+                                    <input class="step__input" type="radio" name="forWhom" id="colleague">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="other">Другое</label>
+                                    <input class="step__input" type="radio" name="forWhom" id="other">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer">
+                            <button class="step__btn step__btn_right" disabled>Далее
+                                <img class="step__arrow step__arrow_right" src="arrRight.33d6d258ae391995ebf7.svg"
+                                    alt="next">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step step_2 hidden">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">В каком городе планируете поступать?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main">
+                            <div class="step__select select">
+                                <div class="select__text">
+                                    <span class="select__title">Город</span>
+                                    <span class="select__selected-values">Выбрать города</span>
+                                </div>
+                                <img class="select__icon" src="arrSelect.14366d3f2bdf2d2af079.svg" alt="icon">
+                            </div>
+                            <fieldset class="step__chekboxes hidden">
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="cities" id="Москва">
+                                    <label class="step__label" for="Москва">Москва</label>
+                                </div>
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="cities" id="Новосибирск">
+                                    <label class="step__label" for="Новосибирск">Новосибирск</label>
+                                </div>
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="cities" id="Нижний">
+                                    <label class="step__label" for="Нижний">Нижний Новгород</label>
+                                </div>
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="cities" id="Ростов-на-Дону">
+                                    <label class="step__label" for="Ростов-на-Дону">Ростов-на-Дону</label>
+                                </div>
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="cities" id="Краснодар">
+                                    <label class="step__label" for="Краснодар">Краснодар</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer">
+                            <button class="step__btn step__btn_left">
+                                <img class="step__arrow step__arrow_left" src="arrLeft.c36dd7c56f9132705ba4.svg" alt="prew">
+                                Назад
+                            </button>
+                            <button class="step__btn step__btn_right" disabled>Далее
+                                <img class="step__arrow step__arrow_right" src="arrRight.33d6d258ae391995ebf7.svg"
+                                    alt="next">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step step_3 hidden">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">Какое образование уже есть?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main step__main_sm-radio">
+                            <fieldset class="step__inner_first">
+                                <div class="step__item">
+                                    <label class="step__label" for="9">9 классов</label>
+                                    <input class="step__input" type="radio" name="education" id="9">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="11">11 классов</label>
+                                    <input class="step__input" type="radio" name="education" id="11">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="училище">Училище</label>
+                                    <input class="step__input" type="radio" name="education" id="училище">
+                                </div>
+                            </fieldset>
+                            <fieldset class="step__inner_second">
+                                <div class="step__item">
+                                    <label class="step__label" for="колледж">Колледж/техникум</label>
+                                    <input class="step__input" type="radio" name="education" id="колледж">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="высшее">Высшее</label>
+                                    <input class="step__input" type="radio" name="education" id="высшее">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="неоконченное">Неоконченное высшее</label>
+                                    <input class="step__input" type="radio" name="education" id="неоконченное">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer">
+                            <button class="step__btn step__btn_left">
+                                <img class="step__arrow step__arrow_left" src="arrLeft.c36dd7c56f9132705ba4.svg" alt="prew">
+                                Назад
+                            </button>
+                            <button class="step__btn step__btn_right" disabled>Далее
+                                <img class="step__arrow step__arrow_right" src="arrRight.33d6d258ae391995ebf7.svg" 
+                                    alt="next">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step step_4 hidden">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">Куда планируете поступать?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main step__main_lg-radio">
+                            <fieldset class="step__inner">
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="вуз">Вуз</label>
+                                    <input class="step__input step__input_lg" type="radio" name="plan-education"
+                                        id="вуз">
+                                </div>
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="техникум">Колледж/техникум</label>
+                                    <input class="step__input step__input_lg" type="radio" name="plan-education"
+                                        id="техникум">
+                                </div>
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="уч">Училище</label>
+                                    <input class="step__input step__input_lg" type="radio" name="plan-education"
+                                        id="уч">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer">
+                            <button class="step__btn step__btn_left">
+                                <img class="step__arrow step__arrow_left" src="arrLeft.c36dd7c56f9132705ba4.svg" alt="prew">
+                                Назад
+                            </button>
+                            <button class="step__btn step__btn_right" disabled>Далее
+                                <img class="step__arrow step__arrow_right" src="arrRight.33d6d258ae391995ebf7.svg"
+                                    alt="next">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step step_5 hidden">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">Какую форму обучения предпочитаете?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main step__main_lg-radio">
+                            <fieldset class="step__inner">
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="очно">Очную</label>
+                                    <input class="step__input step__input_lg" type="radio" name="form-education"
+                                        id="очно">
+                                </div>
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="заочно">Заочную</label>
+                                    <input class="step__input step__input_lg" type="radio" name="form-education"
+                                        id="заочно">
+                                </div>
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="дистанц">Дистанционную</label>
+                                    <input class="step__input step__input_lg" type="radio" name="form-education"
+                                        id="дистанц">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer">
+                            <button class="step__btn step__btn_left">
+                                <img class="step__arrow step__arrow_left" src="arrLeft.c36dd7c56f9132705ba4.svg" alt="prew">
+                                Назад
+                            </button>
+                            <button class="step__btn step__btn_right" disabled>Далее
+                                <img class="step__arrow step__arrow_right" src="arrRight.33d6d258ae391995ebf7.svg"
+                                    alt="next">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step step_6 hidden">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">Рассматриваете платное обучение?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main step__main_lg-radio">
+                            <fieldset class="step__inner">
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="бюджет">Нет, только бюджет</label>
+                                    <input class="step__input step__input_lg" type="radio" name="paid-education"
+                                        id="бюджет">
+                                </div>
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="платно">Да, планирую учиться платно</label>
+                                    <input class="step__input step__input_lg" type="radio" name="paid-education"
+                                        id="платно">
+                                </div>
+                                <div class="step__item step__item_lg">
+                                    <label class="step__label" for="оба">Возможны оба варианта</label>
+                                    <input class="step__input step__input_lg" type="radio" name="paid-education"
+                                        id="оба">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer">
+                            <button class="step__btn step__btn_left">
+                                <img class="step__arrow step__arrow_left" src="arrLeft.c36dd7c56f9132705ba4.svg" alt="prew">
+                                Назад
+                            </button>
+                            <button class="step__btn step__btn_right" disabled>Далее
+                                <img class="step__arrow step__arrow_right" src="arrRight.33d6d258ae391995ebf7.svg"
+                                    alt="next">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step step_7 hidden">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">Какая специальность интересует?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main">
+                            <div class="step__select select">
+                                <div class="select__text">
+                                    <span class="select__title">Специальность</span>
+                                    <span class="select__selected-values">Любая</span>
+                                </div>
+                                <img class="select__icon" src="arrSelect.14366d3f2bdf2d2af079.svg" alt="icon">
+                            </div>
+                            <fieldset class="step__chekboxes hidden">
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="speciality" id="экономика">
+                                    <label class="step__label" for="экономика">Экономика</label>
+                                </div>
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="speciality" id="философия">
+                                    <label class="step__label" for="философия">Философия</label>
+                                </div>
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="speciality" id="юриспруденция">
+                                    <label class="step__label" for="юриспруденция">Юриспруденция</label>
+                                </div>
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="speciality" id="менеджмент">
+                                    <label class="step__label" for="менеджмент">Менеджмент</label>
+                                </div>
+                                <div class="step__item_checkbox">
+                                    <input class="step__checkbox" type="checkbox" name="speciality" id="фармакология">
+                                    <label class="step__label" for="фармакология">Фармакология</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer">
+                            <button class="step__btn step__btn_left">
+                                <img class="step__arrow step__arrow_left" src="arrLeft.c36dd7c56f9132705ba4.svg" alt="prew">
+                                Назад
+                            </button>
+                            <button class="step__btn step__btn_right" disabled>Далее
+                                <img class="step__arrow step__arrow_right" src="arrRight.33d6d258ae391995ebf7.svg"
+                                    alt="next">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step step_8 hidden">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">Как скоро планируете поступать?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main step__main_sm-radio">
+                            <fieldset class="step__inner_first">
+                                <div class="step__item">
+                                    <label class="step__label" for="faster">Как можно быстрее</label>
+                                    <input class="step__input" type="radio" name="When" id="faster">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="quarter">Квартал</label>
+                                    <input class="step__input" type="radio" name="When" id="quarter">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="year">Год</label>
+                                    <input class="step__input" type="radio" name="When" id="year">
+                                </div>
+                            </fieldset>
+                            <fieldset class="step__inner_second">
+                                <div class="step__item">
+                                    <label class="step__label" for="month">Месяц</label>
+                                    <input class="step__input" type="radio" name="When" id="month">
+                                </div>
+                                <div class="step__item">
+                                    <label class="step__label" for="half">Полгода</label>
+                                    <input class="step__input" type="radio" name="When" id="half">
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer">
+                            <button class="step__btn step__btn_left">
+                                <img class="step__arrow step__arrow_left" src="arrLeft.c36dd7c56f9132705ba4.svg" alt="prew">
+                                Назад
+                            </button>
+                            <button class="step__btn step__btn_right" disabled>Далее
+                                <img class="step__arrow step__arrow_right" src="arrRight.33d6d258ae391995ebf7.svg"
+                                    alt="next">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="step step_9 hidden">
+                    <form>
+                        <div class="step__header">
+                            <p class="step__question">Ваша подборка готова! 🥳 Куда нам отправить её?</p>
+                            <div class="step__number"></div>
+                        </div>
+                        <div class="step__main step__main_lg-input">
+                            <fieldset class="step__inner">
+                                <input class="step__item step__item_lg" type="text" name="feedback"
+                                    placeholder="Как вас зовут?" minlength="2" id="name" required>
+                                <input class="step__item step__item_lg" type="tel" name="feedback"
+                                    placeholder="Номер телефона" minlength="5" pattern="^\+?\d+$" id="phone" required>
+                                <input class="step__item step__item_lg" type="email" name="feedback"
+                                    placeholder="E-mail" minlength="2" pattern=".+@.+\..+" id="email" required>
+                            </fieldset>
+                        </div>
+                        <div class="step__footer step__footer_send">
+                            <button class="step__btn step__btn_lg contact-send">Получить подборку</button>
+                            <p class="step__person-data">Нажимая на кнопку, вы даете согласие на обработку своих <a
+                                    href="#" target="_blank"><b>Персональных данных</b></a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="finish hidden">
+                    <img class="finish__icon" src="finishIcon.0a8a8da43a4ef48987eb.svg" alt="icon">
+                    <p class="finish__title">Отлично, спасибо!</p>
+                    <p class="finish__text">Мы отправили подборку вам на почту. Если подборка не приходит — проверьте
+                        спам, возможно, она попала туда.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
